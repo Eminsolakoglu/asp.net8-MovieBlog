@@ -1,0 +1,15 @@
+.film{
+    border: 1px solid #000;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background: beige;
+}
+.film-img {
+    width: 200px; /* Genişlik */
+    height: 300px; /* Yükseklik */
+    object-fit: cover; /* Görselin taşmasını engeller, kesme yapar */
+    border-radius: 5px; /* Hafif yuvarlak köşeler */
+    display: block;
+    margin-bottom: 10px;
+}
