@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "RGV935PPchof9z/ArIQSbWHtSD3LKFG8Ou7SJpBJ0P8=",
+  "Hash": "hsk7Eh/ooP0eL30hSQvvWRekFMCmf2EDyTmqpzTByhk=",
   "Source": "MovieApp.Web",
   "BasePath": "_content/MovieApp.Web",
   "Mode": "Default",
@@ -110,6 +110,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/img/pulp-fiction-movie-poster-01.webp"
+    },
+    {
+      "Identity": "/Users/muhammedeminsolakoglu/Desktop/dotnet/MovieApp/MovieApp.Web/wwwroot/js/script.js",
+      "SourceId": "MovieApp.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/muhammedeminsolakoglu/Desktop/dotnet/MovieApp/MovieApp.Web/wwwroot/",
+      "BasePath": "_content/MovieApp.Web",
+      "RelativePath": "js/script.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/js/script.js"
     }
   ]
 }

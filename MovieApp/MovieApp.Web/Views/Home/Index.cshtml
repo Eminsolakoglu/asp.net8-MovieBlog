@@ -1,8 +1,16 @@
 
 @model Movie
-@{
-    Layout = "_Layout2";
+
+@section header
+{
+   @await Html.PartialAsync( "_header")
+
 }
+@section scripts
+{
+   <script src="js/script.js"></script>
+}
+
 <div class="film">
     <h1> Film bilgileri</h1>
     
