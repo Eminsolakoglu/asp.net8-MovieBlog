@@ -26,3 +26,4 @@
 /Users/muhammedeminsolakoglu/Desktop/dotnet/MovieApp/MovieApp.Web/obj/Debug/net8.0/MovieApp.Web.RazorAssemblyInfo.cache
 /Users/muhammedeminsolakoglu/Desktop/dotnet/MovieApp/MovieApp.Web/obj/Debug/net8.0/MovieApp.Web.RazorAssemblyInfo.cs
 /Users/muhammedeminsolakoglu/Desktop/dotnet/MovieApp/MovieApp.Web/bin/Debug/net8.0/MovieApp.Web.staticwebassets.runtime.json
+/Users/muhammedeminsolakoglu/Desktop/dotnet/MovieApp/MovieApp.Web/obj/Debug/net8.0/MovieApp.Web.sourcelink.json

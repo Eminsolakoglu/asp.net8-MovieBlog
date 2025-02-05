@@ -1,17 +1,8 @@
 
-@model MovieApp.Web.Models.Movie
+@model Movie
 @{
-    Layout = null;
+    Layout = "_Layout2";
 }
-
-<!DOCTYPE html>
-
-<html lang="en">
-<head>
-    <title>title</title>
-    <link href="/css/style.css" rel="stylesheet"/>
-</head>
-<body>
 <div class="film">
     <h1> Film bilgileri</h1>
     
@@ -19,13 +10,9 @@
     <p>@Model.Description </p>
     <p>@Model.Director </p>
      <ul>
-                
-           
         @foreach (var actor in Model.Actors)
         {
            <li>@actor</li>
         }
      </ul>
 </div>
-</body>
-</html>
