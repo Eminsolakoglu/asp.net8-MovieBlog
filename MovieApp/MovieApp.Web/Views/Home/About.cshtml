@@ -1,12 +1,17 @@
-@model Movie
+@model List<Genre>
 @{
     Layout = "_Layout";
 }
 
 
     <h1>Home/About</h1>
-    our mission is @Model.misyon
+
     @section menu
     {
-        @await Html.PartialAsync("_menu")
+        @*         @await Html.PartialAsync("_menu",Model)
+
+        *@
+        
+            @await Component.InvokeAsync("GenreViewComponents")
+
     }

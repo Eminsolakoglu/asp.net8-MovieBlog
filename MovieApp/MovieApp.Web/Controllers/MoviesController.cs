@@ -35,7 +35,15 @@ public class MoviesController : Controller
                 ImageUrl = "moonlight.jpg"
             }
         };
-        return View("Movies",filmListesi);
+
+        
+
+        var model = new MovieGenreViewModel()
+        {
+            Movies = filmListesi,
+           
+        };
+        return View("Movies", model);
     }
     //localhost:5293/movies/details
     public string Details()

@@ -10,17 +10,8 @@
 {
    <script src="js/script.js"></script>
 }
-
-<div class="film">
+ 
+<div >
     <h1> Film bilgileri</h1>
-    
-    <p>@Model.Title </p>
-    <p>@Model.Description </p>
-    <p>@Model.Director </p>
-     <ul>
-        @foreach (var actor in Model.Actors)
-        {
-           <li>@actor</li>
-        }
-     </ul>
+    @await Html.PartialAsync("_movie",Model)
 </div>

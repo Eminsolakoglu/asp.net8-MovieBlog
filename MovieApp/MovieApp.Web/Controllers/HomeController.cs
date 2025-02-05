@@ -19,17 +19,12 @@ public class HomeController : Controller
         m.Director = filmyonetmeni;
         m.Description = filmAciklama;
         m.Actors = oyuncular;
-        
+        m.ImageUrl = "batman.png";
 
         return View(m);
     }
     public IActionResult About()
     {
-        string misyon = "misyonumuz gelecek ";
-
-        var m = new Movie();
-
-        m.misyon = misyon;
-        return View(m);
+        return View();
     }
 }

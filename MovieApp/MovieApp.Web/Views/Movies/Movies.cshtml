@@ -1,4 +1,4 @@
-@model List<MovieApp.Web.Models.Movie>
+@model MovieGenreViewModel
 
 @{
     Layout = "_Layout";
@@ -6,23 +6,15 @@
 
 
  <div id="filmler">
-    @foreach (var movie in Model)
+    @foreach (var movie in Model.Movies)
     {
-        <div class="film">
-            <img src="/img/@movie.ImageUrl" alt="@movie.Title" class="film-img"/>
-            <p>@movie.Title </p>
-            <p>@movie.Description </p>
-            <p>@movie.Director </p>
-            <ul>
-                @foreach (var actor in movie.Actors)
-                {
-                    <li>@actor</li>
-                }
-            </ul>
-        </div>
+        @await Html.PartialAsync("_movie",movie)
     }
 </div>
 @section menu
 {
-    @await Html.PartialAsync("_menu")
+    @*
+     @await Html.PartialAsync("_menu",Model.Genres)
+*@
+    @await Component.InvokeAsync("GenreViewComponents")
 }

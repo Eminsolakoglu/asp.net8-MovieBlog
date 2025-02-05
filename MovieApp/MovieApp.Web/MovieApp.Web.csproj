@@ -10,4 +10,8 @@
       <Folder Include="wwwroot\img\" />
     </ItemGroup>
 
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Pages\Shared\Components\GenreViewCompone\Default.cshtml" />
+    </ItemGroup>
+
 </Project>
