@@ -13,12 +13,32 @@
       "PackagePath": "staticwebassets/img/batman.png"
     },
     {
+      "Id": "/Users/muhammedeminsolakoglu/Desktop/dotnet/MovieApp/MovieApp.Web/wwwroot/img/hangover.jpeg",
+      "PackagePath": "staticwebassets/img/hangover.jpeg"
+    },
+    {
+      "Id": "/Users/muhammedeminsolakoglu/Desktop/dotnet/MovieApp/MovieApp.Web/wwwroot/img/indianajones.jpg",
+      "PackagePath": "staticwebassets/img/indianajones.jpg"
+    },
+    {
+      "Id": "/Users/muhammedeminsolakoglu/Desktop/dotnet/MovieApp/MovieApp.Web/wwwroot/img/jumanji.jpeg",
+      "PackagePath": "staticwebassets/img/jumanji.jpeg"
+    },
+    {
+      "Id": "/Users/muhammedeminsolakoglu/Desktop/dotnet/MovieApp/MovieApp.Web/wwwroot/img/lalaland.jpg",
+      "PackagePath": "staticwebassets/img/lalaland.jpg"
+    },
+    {
       "Id": "/Users/muhammedeminsolakoglu/Desktop/dotnet/MovieApp/MovieApp.Web/wwwroot/img/moonlight.jpg",
       "PackagePath": "staticwebassets/img/moonlight.jpg"
     },
     {
-      "Id": "/Users/muhammedeminsolakoglu/Desktop/dotnet/MovieApp/MovieApp.Web/wwwroot/img/pulp-fiction-movie-poster-01.webp",
-      "PackagePath": "staticwebassets/img/pulp-fiction-movie-poster-01.webp"
+      "Id": "/Users/muhammedeminsolakoglu/Desktop/dotnet/MovieApp/MovieApp.Web/wwwroot/img/prideandprejudice.jpg",
+      "PackagePath": "staticwebassets/img/prideandprejudice.jpg"
+    },
+    {
+      "Id": "/Users/muhammedeminsolakoglu/Desktop/dotnet/MovieApp/MovieApp.Web/wwwroot/img/superbad.jpg",
+      "PackagePath": "staticwebassets/img/superbad.jpg"
     },
     {
       "Id": "/Users/muhammedeminsolakoglu/Desktop/dotnet/MovieApp/MovieApp.Web/wwwroot/js/script.js",
