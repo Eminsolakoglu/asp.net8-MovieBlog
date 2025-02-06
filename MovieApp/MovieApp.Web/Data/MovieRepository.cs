@@ -15,42 +15,48 @@ public class MovieRepository
                 Description = "desc1",
                 Director = "nuribilgeceylan1",
                 Actors = new string[] {"oyuncu1","oyuncu2"},
-                ImageUrl = "batman.png"
+                ImageUrl = "batman.png",
+                GenreId=3
             },
             new Movie(){
                 MovieId = 2,Title = "film2",
                 Description = "desc2",
                 Director = "nuribilgeceylan2",
                 Actors = new string[] {"oyuncu1","oyuncu2"},
-                ImageUrl = "Jokerposter.jpg"
+                ImageUrl = "Jokerposter.jpg",
+                GenreId=1
             },
             new Movie(){
                 MovieId = 3,Title = "film3",
                 Description = "desc3",
                 Director = "nuribilgeceylan3",
                 Actors = new string[] {"oyuncu1","oyuncu2"},
-                ImageUrl = "moonlight.jpg"
+                ImageUrl = "moonlight.jpg",
+                GenreId=1
             },
             new Movie(){
                 MovieId =4,Title = "film1",
                 Description = "desc1",
                 Director = "nuribilgeceylan1",
                 Actors = new string[] {"oyuncu1","oyuncu2"},
-                ImageUrl = "batman.png"
+                ImageUrl = "batman.png",
+                GenreId=2
             },
             new Movie(){
                 MovieId = 5,Title = "film2",
                 Description = "desc2",
                 Director = "nuribilgeceylan2",
                 Actors = new string[] {"oyuncu1","oyuncu2"},
-                ImageUrl = "Jokerposter.jpg"
+                ImageUrl = "Jokerposter.jpg",
+                GenreId=3
             },
             new Movie(){
                 MovieId = 6,Title = "film3",
                 Description = "desc3",
                 Director = "nuribilgeceylan3",
                 Actors = new string[] {"oyuncu1","oyuncu2"},
-                ImageUrl = "moonlight.jpg"
+                ImageUrl = "moonlight.jpg",
+                GenreId=3
             }
         };
     }

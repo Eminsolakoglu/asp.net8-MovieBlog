@@ -3,14 +3,19 @@
 @{
     Layout = "_Layout";
 }
-
-
- <div id="filmler">
+@if (Model.Movies.Count() > 0)
+{
     @foreach (var movie in Model.Movies)
     {
         @await Html.PartialAsync("_movie",movie)
     }
-</div>
+}
+else
+{
+    <div class="alert alert-warning" role="alert">
+film yok    </div>
+}
+
 @section menu
 {
     @*

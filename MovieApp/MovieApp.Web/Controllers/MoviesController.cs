@@ -13,11 +13,20 @@ public class MoviesController : Controller
         return  View();
     }
     //localhost:5293/movies/list
-    public IActionResult List()
+    public IActionResult List(int? id)
     {
+        var movies = MovieRepository.Movies;
+        if (id != null)
+        {
+            movies = movies.Where(m => m.GenreId == id).ToList();
+        }
+            
+            
+            
         var model = new MoviesViewModel()
         {
-            Movies = MovieRepository.Movies
+            Movies = movies
+            
         };
         return View("Movies", model);
     }

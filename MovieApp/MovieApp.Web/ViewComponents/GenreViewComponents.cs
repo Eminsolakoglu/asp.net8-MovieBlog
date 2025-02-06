@@ -9,6 +9,7 @@ public class GenreViewComponents : ViewComponent
 {
     public IViewComponentResult Invoke()
     {
+        ViewBag.SelectedGenre = RouteData.Values["id"];
         
         return View(GenreRepository.Genres);
     }
