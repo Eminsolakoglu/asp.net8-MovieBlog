@@ -50,7 +50,6 @@ public class MoviesController : Controller
     [HttpGet]
     public IActionResult Create()
     {
-        
         return View();
     }
     [HttpPost]
@@ -59,4 +58,30 @@ public class MoviesController : Controller
         MovieRepository.Add(m);
         return RedirectToAction("List");
     }
-}
+    [HttpGet]
+    public IActionResult Edit(int id)
+    {
+        return View(MovieRepository.GetById(id));
+    }
+    [HttpPost]
+    public IActionResult Edit(Movie m)
+    {
+        MovieRepository.Edit(m);
+        // /movies/details/id
+        return RedirectToAction("Details","Movies",new {id=m.MovieId});
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}  
