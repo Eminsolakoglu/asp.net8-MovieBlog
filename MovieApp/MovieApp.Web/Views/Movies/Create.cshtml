@@ -21,9 +21,12 @@
         <label asp-for="ImageUrl"></label>
         <input  asp-for="ImageUrl" class="form-control"/>
     </div>
-    <div class="form-group">
+ <div class="form-group">
         <label asp-for="GenreId"></label>
-        <input  asp-for="GenreId" class="form-control"/>
+        <select asp-for="GenreId" asp-items="@ViewBag.Genres" class="form-control">
+            <option selected disabled>Seçiniz</option>
+
+        </select>
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>
