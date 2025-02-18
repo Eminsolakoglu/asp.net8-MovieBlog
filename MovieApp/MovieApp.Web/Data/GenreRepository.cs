@@ -1,4 +1,5 @@
 using MovieApp.Web.Models;
+using MovieApp.Web.Entity;
 
 namespace MovieApp.Web.Data;
 

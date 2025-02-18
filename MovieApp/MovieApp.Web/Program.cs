@@ -1,5 +1,10 @@
+using Microsoft.EntityFrameworkCore;
+using MovieApp.Web.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddDbContext<MovieContext>(options =>
+    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddControllersWithViews(); // veya builder.Services.AddControllersWithViews();
 
 var app = builder.Build();

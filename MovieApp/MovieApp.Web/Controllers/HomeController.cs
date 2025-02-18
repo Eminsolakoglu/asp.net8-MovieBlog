@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using MovieApp.Web.Data;
 using MovieApp.Web.Models;
+using MovieApp.Web.Entity;
 
 namespace MovieApp.Web.Controllers;
 
