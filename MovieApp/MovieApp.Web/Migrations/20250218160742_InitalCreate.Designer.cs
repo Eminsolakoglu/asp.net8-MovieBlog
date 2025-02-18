@@ -10,7 +10,7 @@ using MovieApp.Web.Data;
 namespace MovieApp.Web.Migrations
 {
     [DbContext(typeof(MovieContext))]
-    [Migration("20250218040632_InitalCreate")]
+    [Migration("20250218160742_InitalCreate")]
     partial class InitalCreate
     {
         /// <inheritdoc />
@@ -18,6 +18,29 @@ namespace MovieApp.Web.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "9.0.2");
+
+            modelBuilder.Entity("MovieApp.Web.Entity.Director", b =>
+                {
+                    b.Property<int>("DirectorId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Biography")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("ImageUrl")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("DirectorId");
+
+                    b.ToTable("Directors");
+                });
 
             modelBuilder.Entity("MovieApp.Web.Entity.Genre", b =>
                 {
@@ -43,10 +66,6 @@ namespace MovieApp.Web.Migrations
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasMaxLength(500)
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Director")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<int>("GenreId")

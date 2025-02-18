@@ -14,7 +14,6 @@ public class Movie
     [MaxLength(500)]
     public string Description { get; set; }
     
-    public string Director { get; set; }
     
     [Required]
     public int GenreId { get; set; }
