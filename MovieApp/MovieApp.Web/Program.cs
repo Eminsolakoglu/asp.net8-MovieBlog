@@ -5,6 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<MovieContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
+
 builder.Services.AddControllersWithViews(); // veya builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
@@ -21,8 +22,17 @@ app.MapControllerRoute("about", "about", new { controller = "Home", action = "Ab
 
 */
 
+// Seed verilerini eklemek için DataSeeding.Seed metodunu çağır
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    var context = services.GetRequiredService<MovieContext>();
+    DataSeeding.Seed(context);
+}
+app.UseStaticFiles();//wwwroot klasörünü kullanıma açıyoruz.
 
-    app.MapControllerRoute("default", "{controller=Home}/{action=Index}/{id?}", null, null, null);
-    app.UseStaticFiles();//wwwroot klasörünü kullanıma açıyoruz.
+    app.MapControllerRoute(
+        "default", 
+        "{controller=Home}/{action=Index}/{id?}", null, null, null);
 
 app.Run();
