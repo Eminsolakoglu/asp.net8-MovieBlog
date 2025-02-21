@@ -4,8 +4,8 @@ using MovieApp.Web.Data;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<MovieContext>(options =>
-    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
-
+    // options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseNpgsql(builder.Configuration.GetConnectionString("PostgreConnection")));
 builder.Services.AddControllersWithViews(); // veya builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
