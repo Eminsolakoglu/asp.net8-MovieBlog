@@ -14,9 +14,10 @@ public class Movie
     [MaxLength(500)]
     public string Description { get; set; }
     
-    
-    [Required]
+    public string ImageUrl { get; set; }
+    [Required] 
+    public Genre Genre { get; set; }//navigation property
     public int GenreId { get; set; }
     
-    public string ImageUrl { get; set; }
+    
 }

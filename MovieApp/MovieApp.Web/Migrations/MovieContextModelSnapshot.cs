@@ -89,7 +89,20 @@ namespace MovieApp.Web.Migrations
 
                     b.HasKey("MovieId");
 
+                    b.HasIndex("GenreId");
+
                     b.ToTable("Movies");
+                });
+
+            modelBuilder.Entity("MovieApp.Web.Entity.Movie", b =>
+                {
+                    b.HasOne("MovieApp.Web.Entity.Genre", "Genre")
+                        .WithMany()
+                        .HasForeignKey("GenreId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Genre");
                 });
 #pragma warning restore 612, 618
         }

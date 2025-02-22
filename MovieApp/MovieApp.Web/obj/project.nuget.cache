@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HAhqcLOyJReTevyaVdKfGH2Aplpz6b5dfWkXaRUI0NM+WhdjLoLxUPZLH0O0/Wxg6G3D9HvkVMBg9ie/wSKBfQ==",
+  "dgSpecHash": "cNIWPF0bz6FzDYmj/mtYCKXahG3VY/8niAYR+M14dNgBpnry5s2tYKrqktkc+fsT1ifhMkArM4pOGmjEA+WDXg==",
   "success": true,
-  "projectFilePath": "/Users/muhammedeminsolakoglu/Desktop/dotnet/MovieApp/MovieApp.Web/MovieApp.Web.csproj",
+  "projectFilePath": "/Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/MovieApp.Web/MovieApp.Web.csproj",
   "expectedPackageFiles": [
     "/Users/muhammedeminsolakoglu/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/muhammedeminsolakoglu/.nuget/packages/microsoft.bcl.asyncinterfaces/7.0.0/microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",

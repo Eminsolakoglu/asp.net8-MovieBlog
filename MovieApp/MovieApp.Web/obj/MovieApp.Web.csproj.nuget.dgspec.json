@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/muhammedeminsolakoglu/Desktop/dotnet/MovieApp/MovieApp.Web/MovieApp.Web.csproj": {}
+    "/Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/MovieApp.Web/MovieApp.Web.csproj": {}
   },
   "projects": {
-    "/Users/muhammedeminsolakoglu/Desktop/dotnet/MovieApp/MovieApp.Web/MovieApp.Web.csproj": {
+    "/Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/MovieApp.Web/MovieApp.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/muhammedeminsolakoglu/Desktop/dotnet/MovieApp/MovieApp.Web/MovieApp.Web.csproj",
+        "projectUniqueName": "/Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/MovieApp.Web/MovieApp.Web.csproj",
         "projectName": "MovieApp.Web",
-        "projectPath": "/Users/muhammedeminsolakoglu/Desktop/dotnet/MovieApp/MovieApp.Web/MovieApp.Web.csproj",
+        "projectPath": "/Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/MovieApp.Web/MovieApp.Web.csproj",
         "packagesPath": "/Users/muhammedeminsolakoglu/.nuget/packages/",
-        "outputPath": "/Users/muhammedeminsolakoglu/Desktop/dotnet/MovieApp/MovieApp.Web/obj/",
+        "outputPath": "/Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/MovieApp.Web/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/muhammedeminsolakoglu/.nuget/NuGet/NuGet.Config"
