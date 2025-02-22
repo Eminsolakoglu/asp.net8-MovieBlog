@@ -90,28 +90,44 @@ public class DataSeeding
         {
             new User(){Username = "usera",Email = "usera@gmail.com",Password = "1234",ImageUrl = "batman.png"},
             new User(){Username = "userb",Email = "userb@gmail.com",Password = "1234",ImageUrl = "batman.png"},
-            new User(){Username = "userc",Email = "userc@gmail.com",Password = "1234",ImageUrl = "batman.png",
-                Person = new Person()
-                {
-                    Name = "Personel 1",
-                    Biography = "Biography1",
-                    Imdb = "1",
-                    HomePage = "test",
-                    PlaceOfBirth = "test",
-                }
-            },    
-            new User(){Username = "userd",Email = "userd@gmail.com",Password = "1234",ImageUrl = "batman.png",
-                Person = new Person()
-                {
-                    Name = "Personel 2",
-                    Biography = "Biography2",
-                    Imdb = "1",
-                    HomePage = "test",
-                    PlaceOfBirth = "test",
-                }
+            new User(){Username = "userc",Email = "userc@gmail.com",Password = "1234",ImageUrl = "batman.png"},    
+            new User(){Username = "userd",Email = "userd@gmail.com",Password = "1234",ImageUrl = "batman.png"}
+        };
+
+        var people = new List<Person>()
+        {
+            new Person()
+            {
+                Name = "Personel 1",
+                Biography = "Biography1",
+                Imdb = "1",
+                HomePage = "test",
+                PlaceOfBirth = "test",
+                User = users[0]
+            },
+            new Person()
+            {
+                Name = "Personel 2",
+                Biography = "Biography2",
+                Imdb = "1",
+                HomePage = "test",
+                PlaceOfBirth = "test",
+                User = users[1]
+
             }
         };
-        
+
+        var crews = new List<Crew>()
+        {
+            new Crew() { Movie = movies[0], Person = people[0], Job = "Yönetmen" },
+            new Crew() { Movie = movies[0], Person = people[1], Job = "Yönetmen Yard" },
+        };
+        var casts = new List<Cast>()
+        {
+            new Cast() { Movie = movies[0], Person = people[0], Name = "Oyuncu Adı1", Character = "Karakter1", },
+            new Cast() { Movie = movies[0], Person = people[1], Name = "Oyuncu Adı2", Character = "Karakter2", }
+        };
+            
         if (context.Database.GetPendingMigrations().Count()==0)
         {
 
@@ -124,13 +140,22 @@ public class DataSeeding
             if (context.Movies.Count()==0)
             {
                 context.Movies.AddRange(movies);
-                context.SaveChanges();
             }
             if (context.Users.Count()==0)
             {
                 context.Users.AddRange(users);
-                context.SaveChanges();
-
+            }
+            if (context.Persons.Count()==0)
+            {
+                context.Persons.AddRange(people);
+            }
+            if (context.Crews.Count()==0)
+            {
+                context.Crews.AddRange(crews); 
+            }
+            if (context.Casts.Count()==0)
+            {
+                context.Casts.AddRange(casts);
             }
 
 
