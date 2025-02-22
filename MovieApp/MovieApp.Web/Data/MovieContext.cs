@@ -11,7 +11,8 @@ public class MovieContext : DbContext
     }
     public DbSet<Movie> Movies { get; set; }
     public DbSet<Genre> Genres { get; set; }
-    public DbSet<Director> Directors { get; set; }
+    public DbSet<User> Users { get; set; }
+    public DbSet<Person> Persons  { get; set; }
 
   /*  protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
    {

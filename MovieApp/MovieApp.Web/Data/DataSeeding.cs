@@ -11,7 +11,7 @@ public class DataSeeding
         // var context = scope.ServiceProvider.GetService<MovieContext>();
         
         context.Database.Migrate();//dotnet ef database update yapmaya gerek yok bunun sayesinde
-
+    
         var genres = new List<Genre>()
         {
             new Genre {Name = "Macera" ,
@@ -34,44 +34,44 @@ public class DataSeeding
             }
             
             },
-            new Genre { GenreId = 2, Name = "Komedi" },
-            new Genre { GenreId = 3, Name = "Romantik" },
-            new Genre { GenreId = 4, Name = "Savaş" }
+            new Genre { Name = "Komedi" },
+            new Genre { Name = "Romantik" },
+            new Genre { Name = "Savaş" }
         };
 
         var movies = new List<Movie>()
         {
             new Movie()
             {
-                MovieId = 1, Title = "Indiana Jones: Kutsal Hazine Avcıları",
+                 Title = "Indiana Jones: Kutsal Hazine Avcıları",
                 Description = "Ünlü arkeolog Indiana Jones'un macera dolu bir keşif yolculuğu.",
                 ImageUrl = "indianajones.jpg",
                 Genre = genres[0]
             },
             new Movie()
             {
-                MovieId = 2, Title = "Jumanji: Welcome to the Jungle",
+                 Title = "Jumanji: Welcome to the Jungle",
                 Description = "Bir grup gencin, sihirli bir oyun sayesinde fantastik bir maceraya atılması.",
                 ImageUrl = "jumanji.jpeg",
                 Genre = genres[0]
             },
             new Movie()
             {
-                MovieId = 3, Title = "The Hangover",
+                 Title = "The Hangover",
                 Description = "Bir grup arkadaşın çılgın bekarlığa veda partisi sonrası yaşadıkları komik olaylar.",
                 ImageUrl = "hangover.jpeg",
                 Genre = genres[1]// Komedi
             },
             new Movie()
             {
-                MovieId = 4, Title = "Superbad",
+                 Title = "Superbad",
                 Description = "İki lise öğrencisinin mezuniyet öncesi yaşadığı komik maceralar.",
                 ImageUrl = "superbad.jpg",
                 Genre = genres[1]// Komedi
             },
             new Movie()
             {
-                MovieId = 5, Title = "La La Land",
+                 Title = "La La Land",
                 Description =
                     "Los Angeles'ta yolları kesişen bir caz piyanisti ve bir aktris arasındaki romantik hikaye.",
                 ImageUrl = "lalaland.jpg",
@@ -79,24 +79,60 @@ public class DataSeeding
             },
             new Movie()
             {
-                MovieId = 6, Title = "Pride and Prejudice",
+                 Title = "Pride and Prejudice",
                 Description = "Jane Austen'ın klasik aşk hikayesinin modern bir uyarlaması.",
                 ImageUrl = "prideandprejudice.jpg",
                 Genre = genres[2]// Romantik
             }
 
         };
-
+        var users= new List<User>()
+        {
+            new User(){Username = "usera",Email = "usera@gmail.com",Password = "1234",ImageUrl = "batman.png"},
+            new User(){Username = "userb",Email = "userb@gmail.com",Password = "1234",ImageUrl = "batman.png"},
+            new User(){Username = "userc",Email = "userc@gmail.com",Password = "1234",ImageUrl = "batman.png",
+                Person = new Person()
+                {
+                    Name = "Personel 1",
+                    Biography = "Biography1",
+                    Imdb = "1",
+                    HomePage = "test",
+                    PlaceOfBirth = "test",
+                }
+            },    
+            new User(){Username = "userd",Email = "userd@gmail.com",Password = "1234",ImageUrl = "batman.png",
+                Person = new Person()
+                {
+                    Name = "Personel 2",
+                    Biography = "Biography2",
+                    Imdb = "1",
+                    HomePage = "test",
+                    PlaceOfBirth = "test",
+                }
+            }
+        };
+        
         if (context.Database.GetPendingMigrations().Count()==0)
         {
+
              if (context.Genres.Count()==0)
              {
-                 context.Genres.AddRange(genres);    
+                 context.Genres.AddRange(genres);   
+                 //context.SaveChanges();
+
              }
             if (context.Movies.Count()==0)
             {
                 context.Movies.AddRange(movies);
+                context.SaveChanges();
             }
+            if (context.Users.Count()==0)
+            {
+                context.Users.AddRange(users);
+                context.SaveChanges();
+
+            }
+
 
            
             context.SaveChanges();
