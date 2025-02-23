@@ -21,4 +21,15 @@ public class MovieContext : DbContext
    {
         optionsBuilder.UseSqlite("Data Source=movies.db");
     }*/
+
+  protected override void OnModelCreating(ModelBuilder modelBuilder)
+  {
+      base.OnModelCreating(modelBuilder); //Temel sınıfın yapılandırılmasını uygular ve güncellemelere uyum sağlar 
+      modelBuilder.Entity<Movie>().Property(b => b.Title).IsRequired();
+      modelBuilder.Entity<Movie>().Property(b => b.Title).HasMaxLength(500);
+      
+      modelBuilder.Entity<Genre>().Property(b => b.Name).IsRequired();
+      modelBuilder.Entity<Genre>().Property(b => b.Name).HasMaxLength(50);
+
+  }
 }
