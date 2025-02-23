@@ -1,0 +1,15 @@
+/Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/LINQSamples/bin/Debug/net6.0/LINQSamples
+/Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/LINQSamples/bin/Debug/net6.0/LINQSamples.deps.json
+/Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/LINQSamples/bin/Debug/net6.0/LINQSamples.runtimeconfig.json
+/Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/LINQSamples/bin/Debug/net6.0/LINQSamples.dll
+/Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/LINQSamples/bin/Debug/net6.0/LINQSamples.pdb
+/Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/LINQSamples/obj/Debug/net6.0/LINQSamples.GeneratedMSBuildEditorConfig.editorconfig
+/Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/LINQSamples/obj/Debug/net6.0/LINQSamples.AssemblyInfoInputs.cache
+/Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/LINQSamples/obj/Debug/net6.0/LINQSamples.AssemblyInfo.cs
+/Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/LINQSamples/obj/Debug/net6.0/LINQSamples.csproj.CoreCompileInputs.cache
+/Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/LINQSamples/obj/Debug/net6.0/LINQSamples.sourcelink.json
+/Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/LINQSamples/obj/Debug/net6.0/LINQSamples.dll
+/Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/LINQSamples/obj/Debug/net6.0/refint/LINQSamples.dll
+/Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/LINQSamples/obj/Debug/net6.0/LINQSamples.pdb
+/Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/LINQSamples/obj/Debug/net6.0/LINQSamples.genruntimeconfig.cache
+/Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/LINQSamples/obj/Debug/net6.0/ref/LINQSamples.dll
