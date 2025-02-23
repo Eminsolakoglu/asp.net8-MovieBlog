@@ -36,7 +36,9 @@ public class DataSeeding
             },
             new Genre { Name = "Komedi" },
             new Genre { Name = "Romantik" },
-            new Genre { Name = "Savaş" }
+            new Genre { Name = "Savaş" },
+            new Genre { Name = "Oscar Aldı" }
+            
         };
 
         var movies = new List<Movie>()
@@ -46,28 +48,28 @@ public class DataSeeding
                  Title = "Indiana Jones: Kutsal Hazine Avcıları",
                 Description = "Ünlü arkeolog Indiana Jones'un macera dolu bir keşif yolculuğu.",
                 ImageUrl = "indianajones.jpg",
-                Genre = genres[0]
+                Genres = new List<Genre>(){genres[0],new Genre(){Name="Yeni tür"},genres[4]}
             },
             new Movie()
             {
                  Title = "Jumanji: Welcome to the Jungle",
                 Description = "Bir grup gencin, sihirli bir oyun sayesinde fantastik bir maceraya atılması.",
                 ImageUrl = "jumanji.jpeg",
-                Genre = genres[0]
+                Genres = new List<Genre>(){genres[0],genres[4]}
             },
             new Movie()
             {
                  Title = "The Hangover",
                 Description = "Bir grup arkadaşın çılgın bekarlığa veda partisi sonrası yaşadıkları komik olaylar.",
                 ImageUrl = "hangover.jpeg",
-                Genre = genres[1]// Komedi
+                Genres = new List<Genre>(){genres[4],genres[1]}
             },
             new Movie()
             {
                  Title = "Superbad",
                 Description = "İki lise öğrencisinin mezuniyet öncesi yaşadığı komik maceralar.",
                 ImageUrl = "superbad.jpg",
-                Genre = genres[1]// Komedi
+                Genres = new List<Genre>(){genres[4],genres[1]}
             },
             new Movie()
             {
@@ -75,14 +77,14 @@ public class DataSeeding
                 Description =
                     "Los Angeles'ta yolları kesişen bir caz piyanisti ve bir aktris arasındaki romantik hikaye.",
                 ImageUrl = "lalaland.jpg",
-                Genre = genres[2]// Romantik
+                Genres = new List<Genre>(){genres[4],genres[2]}
             },
             new Movie()
             {
                  Title = "Pride and Prejudice",
                 Description = "Jane Austen'ın klasik aşk hikayesinin modern bir uyarlaması.",
                 ImageUrl = "prideandprejudice.jpg",
-                Genre = genres[2]// Romantik
+                Genres = new List<Genre>(){genres[4],genres[2]}
             }
 
         };

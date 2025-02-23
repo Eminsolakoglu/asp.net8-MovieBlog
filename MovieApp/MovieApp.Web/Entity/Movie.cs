@@ -16,8 +16,7 @@ public class Movie
     
     public string ImageUrl { get; set; }
     [Required] 
-    public Genre Genre { get; set; }//navigation property
-    public int GenreId { get; set; }
+    public List<Genre> Genres { get; set; }
     
     
 }
