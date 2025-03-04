@@ -32,8 +32,12 @@ public class AdminController : Controller
                 MovieId = m.MovieId,
                 Title = m.Title,
                 ImageUrl = m.ImageUrl,
-                Description = m.Description
+                Description = m.Description,
+                SelectedGenres = m.Genres
             }).FirstOrDefault(m=>m.MovieId ==id);
+
+        ViewBag.Genres = _context.Genres.ToList();
+        
         if (entity==null)
         {
             return NotFound();
