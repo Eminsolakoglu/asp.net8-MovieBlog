@@ -82,4 +82,17 @@ public class AdminController : Controller
                 }).ToList()
         });
     }
+
+    public IActionResult GenreList()
+    {
+        return View(new AdminGenresViewModel
+        {
+            Genres = _context.Genres.Select(g =>new AdminGenreViewModel
+            {
+                GenreId = g.GenreId,
+                Name = g.Name,
+                Count = g.Movies.Count
+            }).ToList()
+        });
+    }
 }
