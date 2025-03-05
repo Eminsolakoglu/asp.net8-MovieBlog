@@ -139,6 +139,7 @@ public class AdminController : Controller
         {
             entity.Movies.Remove(entity.Movies.FirstOrDefault(m => m.MovieId == id));
         }
+
         _context.SaveChanges();
         return RedirectToAction("GenreList");
     }
@@ -155,6 +156,7 @@ public class AdminController : Controller
 
         return RedirectToAction("GenreList");
     }
+
     [HttpPost]
     public IActionResult MovieDelete(int movieId)
     {
@@ -166,5 +168,44 @@ public class AdminController : Controller
         }
 
         return RedirectToAction("MovieList");
-    }    
+    }
+
+    public IActionResult MovieCreate()
+    {
+        ViewBag.Genres = _context.Genres.ToList();
+        return View();
+    }
+
+    [HttpPost]
+    public IActionResult MovieCreate(Movie m, int[] genreIds)
+    {
+        m.Genres = new List<Genre>();
+        foreach (var id in genreIds)
+        {
+            var genre = _context.Genres.FirstOrDefault(i => i.GenreId == id);
+            if (genre != null)
+            {
+                m.Genres.Add(genre);
+            }
+        }
+        _context.Movies.Add(m);
+        _context.SaveChanges();
+
+        ModelState.Clear(); 
+        TryValidateModel(m); 
+        foreach (var modelState in ModelState.Values)
+        {
+            foreach (var error in modelState.Errors)
+            {
+                System.Diagnostics.Debug.WriteLine(error.ErrorMessage);
+                Console.WriteLine(error.ErrorMessage);
+            }
+        }
+        if (!ModelState.IsValid)
+        {
+            ViewBag.Genres = _context.Genres.ToList();
+            return View();
+        }
+        return RedirectToAction("MovieList", "Admin");
+    }
 }

@@ -20,13 +20,18 @@
 /Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/LINQSamples/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Sqlite.dll
 /Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/LINQSamples/bin/Debug/net8.0/Microsoft.Extensions.Caching.Abstractions.dll
 /Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/LINQSamples/bin/Debug/net8.0/Microsoft.Extensions.Caching.Memory.dll
+/Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/LINQSamples/bin/Debug/net8.0/Microsoft.Extensions.Configuration.dll
 /Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/LINQSamples/bin/Debug/net8.0/Microsoft.Extensions.Configuration.Abstractions.dll
+/Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/LINQSamples/bin/Debug/net8.0/Microsoft.Extensions.Configuration.Binder.dll
 /Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/LINQSamples/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.dll
 /Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/LINQSamples/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
 /Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/LINQSamples/bin/Debug/net8.0/Microsoft.Extensions.DependencyModel.dll
 /Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/LINQSamples/bin/Debug/net8.0/Microsoft.Extensions.Logging.dll
 /Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/LINQSamples/bin/Debug/net8.0/Microsoft.Extensions.Logging.Abstractions.dll
+/Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/LINQSamples/bin/Debug/net8.0/Microsoft.Extensions.Logging.Configuration.dll
+/Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/LINQSamples/bin/Debug/net8.0/Microsoft.Extensions.Logging.Console.dll
 /Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/LINQSamples/bin/Debug/net8.0/Microsoft.Extensions.Options.dll
+/Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/LINQSamples/bin/Debug/net8.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll
 /Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/LINQSamples/bin/Debug/net8.0/Microsoft.Extensions.Primitives.dll
 /Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/LINQSamples/bin/Debug/net8.0/Mono.TextTemplating.dll
 /Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/LINQSamples/bin/Debug/net8.0/Npgsql.dll
@@ -143,8 +148,3 @@
 /Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/LINQSamples/obj/Debug/net8.0/LINQSamples.pdb
 /Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/LINQSamples/obj/Debug/net8.0/LINQSamples.genruntimeconfig.cache
 /Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/LINQSamples/obj/Debug/net8.0/ref/LINQSamples.dll
-/Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/LINQSamples/bin/Debug/net8.0/Microsoft.Extensions.Configuration.dll
-/Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/LINQSamples/bin/Debug/net8.0/Microsoft.Extensions.Configuration.Binder.dll
-/Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/LINQSamples/bin/Debug/net8.0/Microsoft.Extensions.Logging.Configuration.dll
-/Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/LINQSamples/bin/Debug/net8.0/Microsoft.Extensions.Logging.Console.dll
-/Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/LINQSamples/bin/Debug/net8.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll
