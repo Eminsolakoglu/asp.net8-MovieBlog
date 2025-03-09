@@ -9,8 +9,16 @@
       "PackagePath": "staticwebassets/img/Jokerposter.jpg"
     },
     {
+      "Id": "/Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/MovieApp.Web/wwwroot/img/aa1e5bbe-981a-4340-ba3c-629fb2301e7c.jpg",
+      "PackagePath": "staticwebassets/img/aa1e5bbe-981a-4340-ba3c-629fb2301e7c.jpg"
+    },
+    {
       "Id": "/Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/MovieApp.Web/wwwroot/img/batman.png",
       "PackagePath": "staticwebassets/img/batman.png"
+    },
+    {
+      "Id": "/Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/MovieApp.Web/wwwroot/img/fe938cf0-70aa-4728-941b-67e94d90c53c.png",
+      "PackagePath": "staticwebassets/img/fe938cf0-70aa-4728-941b-67e94d90c53c.png"
     },
     {
       "Id": "/Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/MovieApp.Web/wwwroot/img/hangover.jpeg",

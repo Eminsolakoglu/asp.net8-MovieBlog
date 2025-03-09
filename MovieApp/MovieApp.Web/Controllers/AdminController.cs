@@ -49,7 +49,7 @@ public class AdminController : Controller
     }
 
     [HttpPost]
-    public IActionResult MovieUpdate(AdminEditMovieViewModel model, int[] genreIds)
+    public async Task<IActionResult> MovieUpdate(AdminEditMovieViewModel model, int[] genreIds, IFormFile file)
     {
         var entity = _context.Movies.Include("Genres").FirstOrDefault(m => m.MovieId == model.MovieId);
         if (entity == null)
@@ -59,7 +59,19 @@ public class AdminController : Controller
 
         entity.Title = model.Title;
         entity.Description = model.Description;
-        entity.ImageUrl = model.ImageUrl;
+        if (file != null)
+        {
+            var extansion = Path.GetExtension(file.FileName); //.jpg ya da .png
+            var fileName = string.Format($"{Guid.NewGuid()}{extansion}");
+            var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "img", fileName);
+            entity.ImageUrl = fileName;
+
+            using (var stream = new FileStream(path, FileMode.Create))
+            {
+                await file.CopyToAsync(stream);
+            }
+        }
+
         entity.Genres = genreIds.Select(id => _context.Genres.FirstOrDefault(i => i.GenreId == id)).ToList();
 
         _context.SaveChanges();
@@ -188,11 +200,12 @@ public class AdminController : Controller
                 m.Genres.Add(genre);
             }
         }
+
         _context.Movies.Add(m);
         _context.SaveChanges();
 
-        ModelState.Clear(); 
-        TryValidateModel(m); 
+        ModelState.Clear();
+        TryValidateModel(m);
         foreach (var modelState in ModelState.Values)
         {
             foreach (var error in modelState.Errors)
@@ -201,11 +214,13 @@ public class AdminController : Controller
                 Console.WriteLine(error.ErrorMessage);
             }
         }
+
         if (!ModelState.IsValid)
         {
             ViewBag.Genres = _context.Genres.ToList();
             return View();
         }
+
         return RedirectToAction("MovieList", "Admin");
     }
 }

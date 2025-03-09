@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "4+rfYRl/OHyU/XXsGs8aHaLiKNL39nRlPjGHnwfJxSE=",
+  "Hash": "JPP39UKycZ8vqscBYewoTIB8sxzjtix4FiF22cfSEXA=",
   "Source": "MovieApp.Web",
   "BasePath": "_content/MovieApp.Web",
   "Mode": "Default",
@@ -36,6 +36,25 @@
       "OriginalItemSpec": "wwwroot/css/style.css"
     },
     {
+      "Identity": "/Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/MovieApp.Web/wwwroot/img/aa1e5bbe-981a-4340-ba3c-629fb2301e7c.jpg",
+      "SourceId": "MovieApp.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/MovieApp.Web/wwwroot/",
+      "BasePath": "_content/MovieApp.Web",
+      "RelativePath": "img/aa1e5bbe-981a-4340-ba3c-629fb2301e7c.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/img/aa1e5bbe-981a-4340-ba3c-629fb2301e7c.jpg"
+    },
+    {
       "Identity": "/Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/MovieApp.Web/wwwroot/img/batman.png",
       "SourceId": "MovieApp.Web",
       "SourceType": "Discovered",
@@ -53,6 +72,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/img/batman.png"
+    },
+    {
+      "Identity": "/Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/MovieApp.Web/wwwroot/img/fe938cf0-70aa-4728-941b-67e94d90c53c.png",
+      "SourceId": "MovieApp.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/MovieApp.Web/wwwroot/",
+      "BasePath": "_content/MovieApp.Web",
+      "RelativePath": "img/fe938cf0-70aa-4728-941b-67e94d90c53c.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/img/fe938cf0-70aa-4728-941b-67e94d90c53c.png"
     },
     {
       "Identity": "/Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/MovieApp.Web/wwwroot/img/hangover.jpeg",

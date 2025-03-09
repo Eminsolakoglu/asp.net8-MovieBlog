@@ -54,4 +54,25 @@ public class MoviesController : Controller
         };
         return View("Movies", model);
     }
+    //localhost:5293/movies/details
+    [HttpGet]
+    public IActionResult Details(int id)
+    {
+        
+        return View(_context.Movies.Find(id));
+    } 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }  
