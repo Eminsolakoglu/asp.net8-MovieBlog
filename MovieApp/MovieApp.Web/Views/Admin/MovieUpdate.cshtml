@@ -1,5 +1,8 @@
 @model AdminEditMovieViewModel
-
+@{
+    
+    Layout = "_Layout";
+}
 
 <h1>Edit Movie</h1>
 <hr/>
@@ -22,29 +25,35 @@
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </div>
-<div class="col-md-4">
-    <!-- Eğer hiçbir checkbox seçilmezse, boş bir değer gönder -->
-    <input type="hidden" name="genreIds" value="" />
+        <div class="col-md-4">
+            <!-- Eğer hiçbir checkbox seçilmezse, boş bir değer gönder -->
+            <input type="hidden" name="genreIds" value=""/>
 
-    @foreach (var item in (List<Genre>)ViewBag.Genres)
-    {
-        <div class="form-check">
-            <input class="form-check-input" 
-                   type="checkbox" 
-                   name="genreIds"
-                   value="@item.GenreId" 
-                   id="genre_@(item.GenreId)" @(Model.SelectedGenres.Any(i => i.GenreId == item.GenreId) ? "checked" : "")>
-            <label class="form-check-label" for="genre_@(item.GenreId)">
-                @item.Name
-            </label>
+            @foreach (var item in (List<Genre>)ViewBag.Genres)
+            {
+                <div class="form-check">
+                    <input class="form-check-input"
+                           type="checkbox"
+                           name="genreIds"
+                           value="@item.GenreId"
+                           id="genre_@(item.GenreId)" @(Model.SelectedGenres.Any(i => i.GenreId == item.GenreId) ? "checked" : "")>
+                    <label class="form-check-label" for="genre_@(item.GenreId)">
+                        @item.Name
+                    </label>
+                </div>
+            }
+            <div class="mt-3">
+                <img src="/img/@Model.ImageUrl" width="150"/>
+            </div>
         </div>
-    }
-    <div class="mt-3">
-        <img src="/img/@Model.ImageUrl" width="150" />
-    </div>
-</div>
 
     </div>
 </form>
 
-
+@section scripts
+{
+    <script src="https://cdn.ckeditor.com/4.16.0/basic/ckeditor.js"></script>
+    <script>
+    	CKEDITOR.replace( 'Description' );
+    </script>
+}
