@@ -26,14 +26,17 @@
                 <div class="form-check">
                     <input class="form-check-input" 
                            type="checkbox" 
-                           name="genreIds"
+                           name="GenreIds"
                            value="@item.GenreId" 
-                           id="genre_@(item.GenreId)" )>
+                           id="genre_@(item.GenreId)"
+                           @(Model.GenreIds !=null && Model.GenreIds.Any(i => i == item.GenreId) ? "checked" : "")>
                     <label class="form-check-label" for="genre_@(item.GenreId)">
                         @item.Name
                     </label>
                 </div>
             }
+            
+            <span asp-validation-for="GenreIds" class="text-danger"></span>
         </div>
     </div>
 </form>

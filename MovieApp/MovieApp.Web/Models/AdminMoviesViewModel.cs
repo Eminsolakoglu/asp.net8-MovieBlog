@@ -21,10 +21,14 @@ public class AdminCreateMovieModel
     [Required(ErrorMessage = "Film Adı Girmelisiniz!")]
     [StringLength(50,MinimumLength = 3,ErrorMessage = "Film Adı için 3-50 karakter girmelisiniz")]
     public string Title { get; set; }
+    
     [Display(Name = "Film açıklaması")]
     [Required(ErrorMessage = "Film açıklaması Girmelisiniz!")]
     [StringLength(3000,MinimumLength = 10,ErrorMessage = "Film açıklaması için 10-3000 karakter girmelisiniz")]
     public string Description { get; set; }
+    
+    [Required(ErrorMessage = "En az bir tür seçmelisiniz")]
+    public int[] GenreIds { get; set; }
 }
 public class AdminEditMovieViewModel
 {

@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.EntityFrameworkCore;
 using MovieApp.Web.Data;
 using MovieApp.Web.Entity;
@@ -185,12 +186,21 @@ public class AdminController : Controller
     public IActionResult MovieCreate()
     {
         ViewBag.Genres = _context.Genres.ToList();
-        return View();
+        return View(new AdminCreateMovieModel());
     }
 
     [HttpPost]
-    public IActionResult MovieCreate(AdminCreateMovieModel model, int[] genreIds)
+    public IActionResult MovieCreate(AdminCreateMovieModel model)
     {
+        if (model.Title != null && model.Title.Contains("@"))
+        {
+            ModelState.AddModelError("Title","film baslığında @ işareti içeremez");
+        }
+
+        // if (model.GenreIds == null )
+        // {
+        //     ModelState.AddModelError("GenreIds","En az bir tür seçmelisiniz");
+        // }
         // Önce modelin doğrulamasını yapalım
         if (!ModelState.IsValid)
         {
@@ -206,7 +216,7 @@ public class AdminController : Controller
             ImageUrl = "no-image.jpg"
         };
     
-        foreach (var id in genreIds)
+        foreach (var id in model.GenreIds)
         {
             var genre = _context.Genres.FirstOrDefault(i => i.GenreId == id);
             if (genre != null)
