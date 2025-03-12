@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "JPP39UKycZ8vqscBYewoTIB8sxzjtix4FiF22cfSEXA=",
+  "Hash": "u0Rnqp9sVT3tKeCWk02W8GvmYaNjsYwkoenJV6JT4Hk=",
   "Source": "MovieApp.Web",
   "BasePath": "_content/MovieApp.Web",
   "Mode": "Default",
@@ -34,6 +34,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/style.css"
+    },
+    {
+      "Identity": "/Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/MovieApp.Web/wwwroot/img/54c5f372-eaae-44a2-b5f6-f9afeb090f0c.png",
+      "SourceId": "MovieApp.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/MovieApp.Web/wwwroot/",
+      "BasePath": "_content/MovieApp.Web",
+      "RelativePath": "img/54c5f372-eaae-44a2-b5f6-f9afeb090f0c.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/img/54c5f372-eaae-44a2-b5f6-f9afeb090f0c.png"
     },
     {
       "Identity": "/Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/MovieApp.Web/wwwroot/img/aa1e5bbe-981a-4340-ba3c-629fb2301e7c.jpg",
@@ -205,6 +224,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/img/moonlight.jpg"
+    },
+    {
+      "Identity": "/Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/MovieApp.Web/wwwroot/img/no-image.jpg",
+      "SourceId": "MovieApp.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/MovieApp.Web/wwwroot/",
+      "BasePath": "_content/MovieApp.Web",
+      "RelativePath": "img/no-image.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/img/no-image.jpg"
     },
     {
       "Identity": "/Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/MovieApp.Web/wwwroot/img/prideandprejudice.jpg",

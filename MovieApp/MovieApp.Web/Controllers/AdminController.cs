@@ -189,38 +189,36 @@ public class AdminController : Controller
     }
 
     [HttpPost]
-    public IActionResult MovieCreate(Movie m, int[] genreIds)
+    public IActionResult MovieCreate(AdminCreateMovieModel model, int[] genreIds)
     {
-        m.Genres = new List<Genre>();
+        // Önce modelin doğrulamasını yapalım
+        if (!ModelState.IsValid)
+        {
+            ViewBag.Genres = _context.Genres.ToList();
+            return View(model); // Model hatalıysa sayfayı hata mesajlarıyla geri döndür.
+        }
+
+        // Model geçerliyse, veritabanına kaydetme işlemini yap
+        var entity = new Movie()
+        {
+            Title = model.Title,
+            Description = model.Description,
+            ImageUrl = "no-image.jpg"
+        };
+    
         foreach (var id in genreIds)
         {
             var genre = _context.Genres.FirstOrDefault(i => i.GenreId == id);
             if (genre != null)
             {
-                m.Genres.Add(genre);
+                entity.Genres.Add(genre);
             }
         }
 
-        _context.Movies.Add(m);
-        _context.SaveChanges();
-
-        ModelState.Clear();
-        TryValidateModel(m);
-        foreach (var modelState in ModelState.Values)
-        {
-            foreach (var error in modelState.Errors)
-            {
-                System.Diagnostics.Debug.WriteLine(error.ErrorMessage);
-                Console.WriteLine(error.ErrorMessage);
-            }
-        }
-
-        if (!ModelState.IsValid)
-        {
-            ViewBag.Genres = _context.Genres.ToList();
-            return View();
-        }
+        _context.Movies.Add(entity);
+        _context.SaveChanges(); // Sadece doğrulama başarılıysa veritabanına kaydet
 
         return RedirectToAction("MovieList", "Admin");
     }
+
 }

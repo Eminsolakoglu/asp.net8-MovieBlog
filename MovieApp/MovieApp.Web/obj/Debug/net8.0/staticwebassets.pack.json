@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets/css/style.css"
     },
     {
+      "Id": "/Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/MovieApp.Web/wwwroot/img/54c5f372-eaae-44a2-b5f6-f9afeb090f0c.png",
+      "PackagePath": "staticwebassets/img/54c5f372-eaae-44a2-b5f6-f9afeb090f0c.png"
+    },
+    {
       "Id": "/Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/MovieApp.Web/wwwroot/img/Jokerposter.jpg",
       "PackagePath": "staticwebassets/img/Jokerposter.jpg"
     },
@@ -39,6 +43,10 @@
     {
       "Id": "/Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/MovieApp.Web/wwwroot/img/moonlight.jpg",
       "PackagePath": "staticwebassets/img/moonlight.jpg"
+    },
+    {
+      "Id": "/Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/MovieApp.Web/wwwroot/img/no-image.jpg",
+      "PackagePath": "staticwebassets/img/no-image.jpg"
     },
     {
       "Id": "/Users/muhammedeminsolakoglu/Desktop/dotnet/asp.net8-MovieBlog/MovieApp/MovieApp.Web/wwwroot/img/prideandprejudice.jpg",

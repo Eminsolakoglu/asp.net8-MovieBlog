@@ -7,6 +7,10 @@ using System.ComponentModel.DataAnnotations;
 namespace MovieApp.Web.Entity;
 public class Movie
 {
+    public Movie()
+    {
+        Genres = new List<Genre>();
+    }
     // Primary Key => Id,  <TypeName>Id
     public int  MovieId { get; set; }
 
